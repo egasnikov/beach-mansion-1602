@@ -1,0 +1,292 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Beach Mansion 1602</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+:root{
+  --navy:#123C55; --ink-navy:#051C2C; --teal:#00A9CE; --teal-tint:#DCEFF6;
+  --ink:#1A1F26; --grey:#6B7886; --line:#DBE2E8; --zebra:#F4F6F8; --sheet:#FFFFFF; --ground:#EEF1F4;
+  --sub:#9FB6C2;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:Calibri,"Segoe UI",-apple-system,Helvetica,Arial,sans-serif;font-size:13px;line-height:1.45;padding-block:18px;padding-inline:16px}
+.sheet{max-width:1180px;margin:0 auto;background:var(--sheet);border:1px solid var(--line)}
+.mast{background:var(--navy);color:#fff;padding:22px 28px 18px;border-bottom:2px solid var(--teal);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:flex-end}
+.mast h1{margin:0;font-size:21px;font-weight:600;text-wrap:balance}
+.mast .sub{color:var(--sub);font-size:12.5px;margin-top:4px}
+.mast .date{color:var(--sub);font-size:12px;text-align:right}
+.bar{background:var(--navy);color:#fff;font-size:12.5px;font-weight:600;padding:6px 28px;border-bottom:2px solid var(--teal);letter-spacing:.02em;text-transform:uppercase}
+.bar.sec{background:#1E5673}
+.pad{padding:18px 28px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.kpi{background:var(--teal-tint);padding:12px 14px;border-left:3px solid var(--teal)}
+.kpi .l{font-size:11px;color:var(--grey);text-transform:uppercase;letter-spacing:.04em}
+.kpi .v{font-size:22px;font-weight:600;color:var(--navy);font-variant-numeric:tabular-nums;margin-top:2px}
+.kpi .m{font-size:11px;color:var(--grey);font-style:italic}
+.kpi.op{background:#E9F1F5;border-left-color:var(--navy)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+@media(max-width:820px){.grid2{grid-template-columns:1fr}}
+h3{margin:0 0 8px;font-size:13.5px;color:var(--navy);font-weight:600}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+td,th{padding:5px 8px;text-align:right;border-bottom:1px solid var(--line);font-size:12.5px}
+td:first-child,th:first-child{text-align:left}
+tbody tr:nth-child(even){background:var(--zebra)}
+th{color:var(--grey);font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.03em}
+tr.tot td{font-weight:600;color:var(--navy);border-top:2px solid var(--navy)}
+tr.sub td{color:var(--grey);font-style:italic;font-size:11.5px}
+.meta{color:var(--grey);font-style:italic;font-size:11.5px}
+.inputs{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px 24px}
+.inp label{display:flex;justify-content:space-between;font-size:12px;color:var(--ink)}
+.inp label b{color:var(--navy);font-variant-numeric:tabular-nums}
+.inp input[type=range]{width:100%;accent-color:var(--teal);margin:4px 0 0}
+.inp .src{font-size:10.5px;color:var(--grey);font-style:italic}
+.tierbar{display:flex;height:26px;border:1px solid var(--line);margin:8px 0 4px;overflow:hidden}
+.tierbar div{height:100%;min-width:0}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:11.5px;color:var(--grey)}
+.legend i{display:inline-block;width:10px;height:10px;margin-right:4px;vertical-align:-1px}
+.sens{overflow-x:auto}
+.sens td.base{background:var(--teal-tint);font-weight:600;color:var(--navy)}
+.sens td.neg{color:var(--grey)}
+.note{background:var(--zebra);border-left:3px solid var(--navy);padding:10px 14px;font-size:12.5px;margin-top:12px}
+.foot{padding:12px 28px;color:var(--grey);font-size:10.5px;font-style:italic;border-top:1px solid var(--line)}
+button{background:var(--navy);color:#fff;border:0;padding:6px 12px;font-size:12px;cursor:pointer}
+button:focus-visible,input:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+.terms td{white-space:normal;text-align:left}
+</style>
+
+<div class="sheet">
+  <div class="mast">
+    <div>
+      <h1>Beach Mansion T2, Unit 1602 | Fix and flip investment memorandum</h1>
+      <div class="sub">EMAAR Beachfront, Dubai. 3-bedroom, 2,234 sq ft. Property Investment Agreement with M. Raitsyn dated 8 Jan 2026. Operator: Palm and Peak.</div>
+    </div>
+    <div class="date">September 2026<br>Model v: 20260203, PHPP-paid update 26 Sep 2026<br>All figures AED</div>
+  </div>
+
+  <div class="bar">Headline returns (live)</div>
+  <div class="pad">
+    <div class="kpis">
+      <div class="kpi"><div class="l">Exit price (incl PHPP)</div><div class="v" id="k_exit"></div><div class="m" id="k_psf"></div></div>
+      <div class="kpi"><div class="l">Gross profit</div><div class="v" id="k_profit"></div><div class="m">after 2.1% sell fee, before waterfall</div></div>
+      <div class="kpi"><div class="l">Project IRR</div><div class="v" id="k_irr"></div><div class="m" id="k_roi"></div></div>
+      <div class="kpi"><div class="l">Investor profit share</div><div class="v" id="k_invp"></div><div class="m" id="k_invirr"></div></div>
+      <div class="kpi op"><div class="l">Operator total (P and P)</div><div class="v" id="k_opt"></div><div class="m" id="k_opm"></div></div>
+      <div class="kpi op"><div class="l">Operator share of profit</div><div class="v" id="k_opsh"></div><div class="m" id="k_band"></div></div>
+    </div>
+  </div>
+
+  <div class="bar">Inputs</div>
+  <div class="pad">
+    <div class="inputs" id="inputs"></div>
+    <div style="margin-top:12px;display:flex;gap:10px;align-items:center"><button id="reset" type="button">Reset to JV base case</button><span class="meta">Base case = the 20260203 model and JV Section 2, with exit set to 10.5M (Gas, 26 Sep 2026). Move any slider to see the live effect.</span></div>
+  </div>
+
+  <div class="grid2 pad" style="padding-top:0">
+    <div>
+      <div class="bar sec" style="margin:0 -0 8px">Uses of funds</div>
+      <table id="uses"></table>
+    </div>
+    <div>
+      <div class="bar sec" style="margin:0 0 8px">Exit and profit</div>
+      <table id="exit"></table>
+    </div>
+  </div>
+
+  <div class="bar">Waterfall distribution (JV Section 4.2)</div>
+  <div class="pad">
+    <p class="meta" style="margin:0 0 8px">Project IRR tested on Invested Capital only, excluding all PHPP, paid or unpaid (JV 4.2: no PHPP amounts enter Invested Capital or IRR). Instalments paid are recovered at exit; the unpaid balance transfers to the buyer. Hurdles computed as simple annual return on Invested Capital for the hold period, as in the model. Tier 1 (return of capital) precedes all tiers.</p>
+    <div class="tierbar" id="tierbar"></div>
+    <div class="legend"><span><i style="background:#123C55"></i>Investor</span><span><i style="background:#00A9CE"></i>Operator</span></div>
+    <table id="wf" style="margin-top:10px"></table>
+    <div class="grid2" style="margin-top:14px">
+      <table id="inv"></table>
+      <table id="opr"></table>
+    </div>
+  </div>
+
+  <div class="bar">Sensitivity: exit price vs hold period</div>
+  <div class="pad">
+    <div class="grid2">
+      <div class="sens"><h3>Investor profit share (AED)</h3><table id="s_inv"></table></div>
+      <div class="sens"><h3>Investor IRR (annualised)</h3><table id="s_irr"></table></div>
+    </div>
+    <div class="grid2" style="margin-top:16px">
+      <div class="sens"><h3>Operator profit share (AED, excl 80,000 fee)</h3><table id="s_op"></table></div>
+      <div class="sens"><h3>Project IRR</h3><table id="s_pirr"></table></div>
+    </div>
+    <p class="meta" style="margin-top:8px">Highlighted cell = current inputs. Rows step 250,000 around the exit price; columns 6 to 12 months. Operator profit is before the flat management fee.</p>
+  </div>
+
+  <div class="grid2 pad" style="padding-top:0">
+    <div>
+      <div class="bar sec" style="margin:0 0 8px">PHPP schedule (Investor pays if still held)</div>
+      <table id="phpp"></table>
+      <p class="meta">Per JV 4.2 no PHPP amount enters Invested Capital or the IRR. Instalments paid are cash the Investor recovers at exit; the unpaid balance transfers to the buyer. Gross profit and the waterfall are unchanged by instalments paid.</p>
+    </div>
+    <div>
+      <div class="bar sec" style="margin:0 0 8px">Key terms from the JV</div>
+      <table class="terms">
+        <tr><td>Capital</td><td>Investor funds 100% (~7.41M budget excl PHPP), title in Investor's name</td></tr>
+        <tr><td>Management fee</td><td>AED 80,000 flat, within 5 days of acquisition (4.1)</td></tr>
+        <tr><td>Profit share</td><td>Paid within 14 days of sale completion and cheque clearance (4.3)</td></tr>
+        <tr><td>Target</td><td>Exit 10.3M+ incl PHPP, 6-month hold, 30%+ project IRR (2.3)</td></tr>
+        <tr><td>Grace period</td><td>If unsold at 6 months, 3 more months to deliver at least 10% IRR (7.3); after 9 months Investor may appoint a broker, reprice or rent (7.4)</td></tr>
+        <tr><td>Investor consent</td><td>Any offer below 10.3M, budget increase over 5%, scope changes (5.1)</td></tr>
+        <tr><td>Schedule</td><td>Design and construction start month 1, market-ready month 3, sale months 3 to 6 (6.1)</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="pad" style="padding-top:0">
+    <div class="note"><b>Model vs contract example.</b> At the JV target exit of 10.3M the signed JV (4.4) illustrates the split with hurdles on 8,922,300 (capital incl PHPP): Investor 896,626 / Operator 264,774 at a ~31.3% IRR. Section 4.2 itself says IRR and Invested Capital exclude PHPP, which is what the 20260203 model and this page apply: hurdles on 7,422,300, giving at 10.3M a Project IRR of 33.7% and Investor 882,564 / Operator 278,836. The 14,062 difference sits in the Operator's favour under the 4.2 reading; agree the basis with the Investor before final distribution. This page's base case uses a 10.5M exit.</div>
+  </div>
+
+  <div class="foot">Sources: 20260203 Beach_Mansion_1602_Model_updated.xlsx (Flipping/IR/Mike Raitsyn) and 202601_JV_PP_and_MR_BM_1602 signed.pdf. Projections, not guarantees. Prepared by Palm and Peak, Dubai, September 2026.</div>
+</div>
+
+<script>
+const BASE={price:7500000,phpp:1500000,paid:275000,dld:4.0,bbuy:2.1,other:4800,reno:850000,opex:30000,fee:80000,exit:10500000,bsell:2.1,hold:6};
+const PHPP_SCHED=[[6,275000],[12,375000],[18,475000],[24,375000]];
+const DEF=[
+ ['price','Acquisition price incl PHPP',5000000,10000000,50000,'AED','JV 2.1'],
+ ['phpp','PHPP left on the unit at acquisition',0,3000000,25000,'AED','JV 2.1, 4 instalments over 24 months'],
+ ['paid','PHPP instalments paid by Investor to date',0,1500000,25000,'AED','month-6 instalment paid Sep 2026; cash out only, excluded from IRR (JV 4.2)'],
+ ['dld','DLD fee',0,4,0.5,'%','4% standard'],
+ ['bbuy','Broker fee (buy)',0,4,0.1,'%','2.1% standard'],
+ ['other','Other transaction costs',0,50000,100,'AED','trustee, conveyancing'],
+ ['reno','Construction budget (CAPEX)',300000,2000000,10000,'AED','JV 2.1, no separate contingency'],
+ ['opex','Operating expenses',0,150000,1000,'AED','DEWA, service charge'],
+ ['fee','Operator management fee',0,300000,5000,'AED','JV 4.1, flat'],
+ ['exit','Target exit price incl PHPP',8000000,13000000,50000,'AED','base 10.5M (JV 2.3 target 10.3M+)'],
+ ['bsell','Broker fee (sell)',0,4,0.1,'%','2.1% standard'],
+ ['hold','Hold period',3,12,1,'months','JV 2.3: 6; grace to 9'],
+];
+const S={...BASE};
+const f0=n=>Math.round(n).toLocaleString('en-US');
+const fp=n=>(n*100).toFixed(1)+'%';
+const fx=n=>n.toFixed(2)+'x';
+
+function calc(s){
+  const net=s.price-s.phpp;
+  const dld=s.price*s.dld/100, bbuy=s.price*s.bbuy/100;   // on face value incl PHPP, as in the model
+  const tx=dld+bbuy+s.other;
+  const paid=Math.min(s.paid,s.phpp);
+  const inv=net+tx+s.reno+s.opex+s.fee;                      // Invested Capital per JV 4.2: excludes all PHPP
+  const remain=s.phpp-paid;                                   // unpaid balance assumed by buyer at exit
+  const deployed=inv+s.phpp;                                  // total capital incl PHPP (paid + unpaid)
+  const sell=s.exit*s.bsell/100;
+  const netp=s.exit-sell;
+  const profit=netp-deployed;
+  const yrs=s.hold/12;
+  const roi=profit/inv;
+  const irr=Math.pow(1+roi,1/yrs)-1;
+  // waterfall: simple hurdles on inv cap
+  const tiers=[
+    {n:'Tier 2: Preferred return',r:'0 to 10%',h:inv*0.10*yrs,i:1,o:0},
+    {n:'Tier 3: Operator catch-up',r:'10 to 12.5%',h:inv*0.025*yrs,i:0,o:1},
+    {n:'Tier 4: Core split 75/25',r:'12.5 to 25%',h:inv*0.125*yrs,i:.75,o:.25},
+    {n:'Tier 5: Enhanced split 70/30',r:'25 to 35%',h:inv*0.10*yrs,i:.70,o:.30},
+    {n:'Tier 6: High performance 50/50',r:'above 35%',h:Infinity,i:.5,o:.5},
+  ];
+  let rem=Math.max(profit,0), ti=0, to=0, rows=[];
+  for(const t of tiers){const a=Math.min(rem,t.h); const ai=a*t.i, ao=a*t.o; ti+=ai; to+=ao; rows.push({...t,rem,a,ai,ao}); rem-=a;}
+  if(profit<0){ti=profit;} // loss borne by investor
+  const invroi=ti/inv, invirr=Math.pow(1+Math.max(invroi,-0.999),1/yrs)-1;
+  let band='Tier 2 (0 to 10%)'; if(irr>0.35)band='Tier 6 (above 35%)'; else if(irr>0.25)band='Tier 5 (25 to 35%)'; else if(irr>0.125)band='Tier 4 (12.5 to 25%)'; else if(irr>0.10)band='Tier 3 (10 to 12.5%)';
+  return {net,dld,bbuy,tx,paid,remain,inv,deployed,sell,netp,profit,yrs,roi,irr,rows,ti,to,invroi,invirr,band};
+}
+
+function buildInputs(){
+  const el=document.getElementById('inputs'); el.innerHTML='';
+  for(const [k,l,min,max,st,u,src] of DEF){
+    const d=document.createElement('div'); d.className='inp';
+    d.innerHTML=`<label for="i_${k}"><span>${l}</span><b id="v_${k}"></b></label><input type="range" id="i_${k}" min="${min}" max="${max}" step="${st}" value="${S[k]}"><div class="src">${src}</div>`;
+    el.appendChild(d);
+    d.querySelector('input').addEventListener('input',e=>{S[k]=parseFloat(e.target.value);render();});
+  }
+  document.getElementById('reset').addEventListener('click',()=>{Object.assign(S,BASE);for(const [k] of DEF)document.getElementById('i_'+k).value=S[k];render();});
+}
+function lab(k){const [,,,,,u]=DEF.find(d=>d[0]===k);const v=S[k];return u==='%'?v.toFixed(1)+'%':u==='months'?v+' months':f0(v);}
+
+function tbl(id,rows){document.getElementById(id).innerHTML=rows.map(r=>`<tr class="${r.c||''}">${r.v.map((c,i)=>`<td>${c}</td>`).join('')}</tr>`).join('');}
+
+function sensGrid(id,fn,fmt){
+  const prices=[-3,-2,-1,0,1,2,3].map(i=>S.exit+i*250000);
+  const months=[6,7,8,9,10,11,12];
+  let h=`<thead><tr><th>Price \\ months</th>${months.map(m=>`<th>${m}</th>`).join('')}</tr></thead><tbody>`;
+  for(const p of prices){h+=`<tr><td>${f0(p)}</td>`;for(const m of months){const r=calc({...S,exit:p,hold:m});const v=fn(r);const base=(p===S.exit&&m===S.hold);h+=`<td class="${base?'base':''} ${v<0?'neg':''}">${fmt(v)}</td>`;}h+='</tr>';}
+  document.getElementById(id).innerHTML=h+'</tbody>';
+}
+
+function render(){
+  for(const [k] of DEF)document.getElementById('v_'+k).textContent=lab(k);
+  const r=calc(S);
+  const g=id=>document.getElementById(id);
+  g('k_exit').textContent=f0(S.exit); g('k_psf').textContent=f0(S.exit/2234)+' per sq ft, '+S.hold+'-month hold';
+  g('k_profit').textContent=f0(r.profit);
+  g('k_irr').textContent=fp(r.irr); g('k_roi').textContent='ROI '+fp(r.roi)+', '+fx(1+r.roi)+' on invested capital';
+  g('k_invp').textContent=f0(r.ti); g('k_invirr').textContent='Investor IRR '+fp(r.invirr)+', ROI '+fp(r.invroi);
+  g('k_opt').textContent=f0(r.to+S.fee); g('k_opm').textContent='profit share '+f0(r.to)+' + fee '+f0(S.fee);
+  g('k_opsh').textContent=r.profit>0?fp(r.to/r.profit):'0.0%'; g('k_band').textContent='top band reached: '+r.band;
+
+  tbl('uses',[
+    {v:['Property acquisition (excl PHPP)',f0(r.net)]},
+    {v:['DLD fee ('+S.dld.toFixed(1)+'% of face value)',f0(r.dld)]},
+    {v:['Broker fee, buy ('+S.bbuy.toFixed(1)+'% of face value)',f0(r.bbuy)]},
+    {v:['Other transaction costs',f0(S.other)]},
+    {v:['Construction budget (CAPEX)',f0(S.reno)]},
+    {v:['Operating expenses',f0(S.opex)]},
+    {v:['Operator management fee',f0(S.fee)]},
+    {c:'tot',v:['Invested Capital (basis for IRR and hurdles, excl PHPP)',f0(r.inv)]},
+    {c:'sub',v:['PHPP instalments paid by Investor to date (cash out, excl from IRR)',f0(r.paid)]},
+    {c:'sub',v:['PHPP unpaid balance, assumed by buyer at exit',f0(r.remain)]},
+    {c:'tot',v:['Total capital incl PHPP',f0(r.deployed)]},
+  ]);
+  tbl('exit',[
+    {v:['Gross sale price (incl PHPP)',f0(S.exit)]},
+    {v:['Less: broker fee, sell ('+S.bsell.toFixed(1)+'%)','('+f0(r.sell)+')']},
+    {c:'tot',v:['Net proceeds',f0(r.netp)]},
+    {v:['Less: PHPP unpaid balance assumed by buyer','('+f0(r.remain)+')']},
+    {v:['Less: PHPP instalments repaid to Investor','('+f0(r.paid)+')']},
+    {v:['Return of Invested Capital','('+f0(r.inv)+')']},
+    {c:'tot',v:['Gross profit',f0(r.profit)]},
+    {v:['Hold period',S.hold+' months']},
+    {v:['Project ROI (on invested capital)',fp(r.roi)]},
+    {v:['Project IRR (annualised, compounded)',fp(r.irr)]},
+    {v:['Multiple on invested capital',fx(1+r.roi)]},
+    {v:['Exit price per sq ft',f0(S.exit/2234)]},
+  ]);
+  // tier bar
+  const tot=Math.max(r.profit,1);
+  document.getElementById('tierbar').innerHTML=r.rows.filter(x=>x.a>0).map(x=>`<div style="width:${x.ai/tot*100}%;background:#123C55" title="${x.n} investor ${f0(x.ai)}"></div><div style="width:${x.ao/tot*100}%;background:#00A9CE" title="${x.n} operator ${f0(x.ao)}"></div>`).join('');
+  let wf=`<thead><tr><th>Tier</th><th>IRR range</th><th>Hurdle</th><th>Available</th><th>Distributed</th><th>To Investor</th><th>To Operator</th></tr></thead><tbody>`;
+  for(const x of r.rows)wf+=`<tr><td>${x.n}</td><td>${x.r}</td><td>${isFinite(x.h)?f0(x.h):'remaining'}</td><td>${f0(x.rem)}</td><td>${f0(x.a)}</td><td>${f0(x.ai)}</td><td>${f0(x.ao)}</td></tr>`;
+  wf+=`<tr class="tot"><td>Total distribution</td><td></td><td></td><td></td><td>${f0(r.ti+r.to)}</td><td>${f0(r.ti)}</td><td>${f0(r.to)}</td></tr></tbody>`;
+  document.getElementById('wf').innerHTML=wf;
+  tbl('inv',[
+    {v:['<b>Investor (M. Raitsyn)</b>','']},
+    {v:['Return of Invested Capital',f0(r.inv)]},
+    {v:['PHPP instalments paid, recovered at exit',f0(r.paid)]},
+    {v:['Profit share',f0(r.ti)]},
+    {c:'tot',v:['Total cash to Investor',f0(r.inv+r.paid+r.ti)]},
+    {v:['Investor ROI (on invested capital)',fp(r.invroi)]},
+    {v:['Investor IRR (annualised)',fp(r.invirr)]},
+  ]);
+  tbl('opr',[
+    {v:['<b>Operator (Palm and Peak)</b>','']},
+    {v:['Management fee (paid at acquisition)',f0(S.fee)]},
+    {v:['Profit share (14 days post sale)',f0(r.to)]},
+    {c:'tot',v:['Total Operator compensation',f0(r.to+S.fee)]},
+    {v:['Operator share of gross profit',r.profit>0?fp(r.to/r.profit):'0.0%']},
+    {v:['Operator compensation as % of exit',fp((r.to+S.fee)/S.exit)]},
+  ]);
+  sensGrid('s_inv',x=>x.ti,f0); sensGrid('s_irr',x=>x.invirr,fp); sensGrid('s_op',x=>x.to,f0); sensGrid('s_pirr',x=>x.irr,fp);
+  let cum=0, ph=`<thead><tr><th>Instalment</th><th>Amount</th><th>Paid if exit after</th><th>Remaining for buyer</th></tr></thead><tbody>`;
+  const scale=S.phpp/1500000;
+  for(const [m,a] of PHPP_SCHED){const amt=a*scale;cum+=amt;ph+=`<tr><td>Month ${m}</td><td>${f0(amt)}</td><td>${f0(cum)}</td><td>${f0(S.phpp-cum)}</td></tr>`;}
+  ph+=`<tr class="tot"><td>Total PHPP</td><td>${f0(S.phpp)}</td><td>Paid to date: ${f0(r.paid)}</td><td>${f0(r.remain)}</td></tr></tbody>`;
+  document.getElementById('phpp').innerHTML=ph;
+}
+buildInputs(); render();
+</script>
+
+</body></html>
