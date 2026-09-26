@@ -77,7 +77,7 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--teal);outline-o
   <div class="bar">Inputs</div>
   <div class="pad">
     <div class="inputs" id="inputs"></div>
-    <div style="margin-top:12px;display:flex;gap:10px;align-items:center"><button id="reset" type="button">Reset to JV base case</button><span class="meta">Base case = the 20260203 model and JV Section 2, with exit set to 10.5M (Gas, 26 Sep 2026). Move any slider to see the live effect.</span></div>
+    <div style="margin-top:12px;display:flex;gap:10px;align-items:center"><button id="reset" type="button">Reset to JV base case</button><span class="meta">Base case = the 20260203 model and JV Section 2, with exit set to 10.5M and a 9-month hold (Gas, 26 Sep 2026). Move any slider to see the live effect.</span></div>
   </div>
 
   <div class="grid2 pad" style="padding-top:0">
@@ -144,7 +144,7 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--teal);outline-o
 </div>
 
 <script>
-const BASE={price:7500000,phpp:1500000,paid:275000,dld:4.0,bbuy:2.1,other:4800,reno:850000,opex:30000,fee:80000,exit:10500000,bsell:2.1,hold:6};
+const BASE={price:7500000,phpp:1500000,paid:275000,dld:4.0,bbuy:2.1,other:4800,reno:850000,opex:30000,fee:80000,exit:10500000,bsell:2.1,hold:9};
 const PHPP_SCHED=[[6,275000],[12,375000],[18,475000],[24,375000]];
 const DEF=[
  ['price','Acquisition price incl PHPP',5000000,10000000,50000,'AED','JV 2.1'],
